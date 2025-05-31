@@ -1,2 +1,16 @@
-# Portafolio
-🌐 Repositorio del portafolio web personal de Eduardo. Desarrollado con React / HTML-CSS, este sitio presenta mis proyectos, habilidades y experiencia como desarrollador Fullstack. El objetivo es mostrar de forma clara y profesional quién soy, qué hago y cómo trabajo.
+# Portafolio Web Personal
+
+Este repositorio contiene el código fuente de mi portafolio web, donde presento mis proyectos, habilidades y experiencia como desarrollador Fullstack.
+
+## 🛠️ Tecnologías utilizadas
+
+- React / Vite
+- Tailwind CSS 
+
+## 📦 Instalación
+
+```bash
+git clone https://github.com/tuusuario/mi-portafolio.git
+cd mi-portafolio
+npm install
+npm run dev
