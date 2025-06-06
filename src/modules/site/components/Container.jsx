@@ -1,5 +1,5 @@
 /**
- * 
+ * Build the class of component
  * @param {{ direction: 'row' | 'col' | 'auto', }} config 
  * @returns {string}
  */
@@ -16,7 +16,7 @@ const buildClass = (config) => {
     return className
 }
 /**
- * 
+ * This build a container using flex
  * @param {{ direction: 'row' | 'col' | 'auto' }} config 
  * @param {ReactNode} children
  * @returns {JSX.Element}
