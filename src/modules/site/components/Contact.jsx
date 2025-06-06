@@ -25,7 +25,7 @@ function SocialNetworksContact() {
 
 function ContactForm() {
     return (
-        <form className='flex flex-col gap-4 grow'>
+        <form className='flex flex-col gap-4 grow' id='contact'>
             <div className='grid gap-4 grid-cols-2'>
                 <TextField id='name' placeholder='Your name' label='Name' required />
                 <TextField id='email' type='email' placeholder='Your email' label='Email' required />

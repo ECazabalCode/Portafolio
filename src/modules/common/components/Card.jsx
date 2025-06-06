@@ -1,5 +1,4 @@
 /**
- * 
  * @param {string} color 
  * @returns {string}
  */
@@ -12,10 +11,15 @@ function getColor(color) {
     throw Error('Color not found')
 }
 
+/**
+ * @param {string} barColor
+ * @param {import("react").ReactNode} children
+ * @returns 
+ */
 function Card({ children, barColor }) {
     return (
         <div className="flex grow bg-white flex-col overflow-hidden border border-gray-200 shadow-xs rounded-md gap-4 shadow-sm">
-            <div className={`${getColor(barColor)} w-full h-1`}></div>
+            {barColor && <div className={`${getColor(barColor)} w-full h-1`}></div>}
             {children}
         </div>
     )

@@ -9,7 +9,7 @@ import Line from '../../common/components/Line'
 function MySkills() {
     return (
         <>
-            <div className="py-13 md:py-24 flex flex-col gap-4 items-center px-4">
+            <div className="py-13 md:py-24 flex flex-col gap-4 items-center px-4" id='skills'>
                 <h1 className="font-bold text-3xl text-center md:text-start">My Skills & Expertise</h1>
                 <div className='xl:max-w-6/12 text-center'>
                     <p className='text-gray-500'>I've developed a diverse set of skills throughout my career. Here's a comprehensive overview of my technical expertise and the technologies I work with.</p>

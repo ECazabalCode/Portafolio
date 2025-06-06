@@ -7,10 +7,9 @@ function Navbar() {
                 <h1 className="text-xl font-bold">EduardoCode</h1>
             </div>
             <div className="hidden lg:flex gap-6 font-medium text-sm m-auto">
-                <a href="#">About</a>
-                <a href="#">Skills</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
+                <a href="#about-me">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
             </div>
             <SocialNetworks />
         </nav>

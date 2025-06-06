@@ -3,7 +3,7 @@ import placeholder from '/src/assets/placeholder.svg'
 
 function AboutMe() {
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 py-12 md:py-32 gap-10 border-b border-gray-200 w-full px-4 grow">
+        <div className="grid grid-cols-1 md:grid-cols-2 py-12 md:py-32 gap-10 border-b border-gray-200 w-full px-4 grow" id='about-me'>
             <div className="bg-gray-200 rounded-xl grow overflow-hidden">
                 <img src={placeholder} alt="placeholder" />
             </div>

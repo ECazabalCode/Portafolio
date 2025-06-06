@@ -1,6 +1,17 @@
 /**
+ * @typedef Config
+ * @property { 'row' | 'col' | 'auto' } direction
+ */
+
+/**
+ * @typedef ContainerProps
+ * @property {import("react").ReactNode} children
+ * @property {Config} config
+ */
+
+/**
  * Build the class of component
- * @param {{ direction: 'row' | 'col' | 'auto', }} config 
+ * @param {Config} config 
  * @returns {string}
  */
 const buildClass = (config) => {
@@ -16,9 +27,8 @@ const buildClass = (config) => {
     return className
 }
 /**
- * This build a container using flex
- * @param {{ direction: 'row' | 'col' | 'auto' }} config 
- * @param {ReactNode} children
+ * This create flex container
+ * @param {ContainerProps}
  * @returns {JSX.Element}
  */
 function Container({ children, config = { direction: 'auto' } }) {

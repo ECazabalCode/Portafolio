@@ -1,3 +1,8 @@
+/**
+ * 
+ * @param {string} text
+ * @returns {JSX.Element}
+ */
 function Tag({ text }) {
     return (
         <div className='bg-gray-100 py-1 rounded-full px-3'>
