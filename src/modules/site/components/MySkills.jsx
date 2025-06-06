@@ -1,10 +1,10 @@
-import Card from './Card'
+import Card from '../../common/components/Card'
 import codeBracket from '../../../assets/code-bracket.svg'
 import server from '../../../assets/server.svg'
 import tools from '../../../assets/tools.svg'
-import Tag from './Tag'
-import Container from './Container'
-import Line from './Line'
+import Tag from '../../common/components/Tag'
+import Container from '../../common/components/Container'
+import Line from '../../common/components/Line'
 
 function MySkills() {
     return (

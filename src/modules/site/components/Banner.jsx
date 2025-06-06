@@ -1,6 +1,6 @@
-import Button from './Button'
-import Container from './Container'
-import Line from './Line'
+import Button from '../../common/components/Button'
+import Container from '../../common/components/Container'
+import Line from '../../common/components/Line'
 
 function Banner() {
     return (

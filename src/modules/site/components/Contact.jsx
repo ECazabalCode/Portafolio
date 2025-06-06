@@ -1,8 +1,8 @@
-import { TextArea, TextField } from './Form'
+import { TextArea, TextField } from '../../common/components/Form'
 import linkedin from '/src/assets/linkedin_social_icon.svg'
 import email from '/src/assets/email-outline.svg'
 import github from '/src/assets/github-outline.svg'
-import Button from './Button'
+import Button from '../../common/components/Button'
 
 function SocialNetworksContact() {
     return (
