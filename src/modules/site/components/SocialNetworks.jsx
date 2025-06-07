@@ -1,6 +1,20 @@
+import { useContext } from 'react'
+import AppContext from '../../../context/AppContext'
+
 function SocialNetworks() {
+    const appContext = useContext(AppContext)
+
+    const handleClick = () => {
+        const language = appContext.language === 'en' ? 'es' : 'en'
+        appContext.setLanguage(language)
+    }
+
     return (
-        <div className="flex gap-2 px-3 items-center ml-auto lg:m-0">
+        <div className="flex gap-2 px-3 items-center ml-auto lg:m-0 lg:ms-auto">
+            <button href="#" className="cursor-pointer p-3 hover:bg-gray-100 rounded flex text-xs gap-1" onClick={handleClick}>
+                <img className="w-4" src='src/assets/language.svg' alt="language" />
+                <p>{appContext.language}</p>
+            </button>
             <a href="#" className="p-3 hover:bg-gray-100 rounded">
                 <img
                     className="w-4"

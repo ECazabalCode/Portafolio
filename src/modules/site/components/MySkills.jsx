@@ -1,18 +1,23 @@
-import Card from '../../common/components/Card'
-import codeBracket from '../../../assets/code-bracket.svg'
-import server from '../../../assets/server.svg'
+import { useContext } from 'react'
 import tools from '../../../assets/tools.svg'
 import Tag from '../../common/components/Tag'
-import Container from '../../common/components/Container'
 import Line from '../../common/components/Line'
+import Card from '../../common/components/Card'
+import server from '../../../assets/server.svg'
+import AppContext from '../../../context/AppContext'
+import Container from '../../common/components/Container'
+import codeBracket from '../../../assets/code-bracket.svg'
+import getTextByLanguage from '../../../utils/get-text-by-language'
 
 function MySkills() {
+    const appContext = useContext(AppContext)
+
     return (
         <>
             <div className="py-13 md:py-24 flex flex-col gap-4 items-center px-4" id='skills'>
                 <h1 className="font-bold text-3xl text-center md:text-start">My Skills & Expertise</h1>
                 <div className='xl:max-w-6/12 text-center'>
-                    <p className='text-gray-500'>I've developed a diverse set of skills throughout my career. Here's a comprehensive overview of my technical expertise and the technologies I work with.</p>
+                    <p className='text-gray-500'>{getTextByLanguage(appContext.language,'my-skills-and-expertise-description')}</p>
                 </div>
                 <div className='grid sm:grid-cols-1 xl:grid-cols-3 gap-3 grow'>
                     <Card barColor='purple'>

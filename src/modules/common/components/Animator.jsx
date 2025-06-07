@@ -31,12 +31,6 @@ function Animator({ children, animation = DEFAULT_ANIM, inteseccingAnimationIsEn
                 if (entry.isIntersecting && inteseccingAnimationIsEnabled) {
                     $component.animate(animation.keyframe, animation.options)
                 }
-                if (entry.boundingClientRect.bottom <= 30) {
-                    $component.animate([
-                        { opacity: 1, transform: 'scale(1)' },
-                        { opacity: 0, transform: 'scale(0)' },
-                    ], animation.options)
-                }
             })
         })
         observer.observe(componentRef.current)
