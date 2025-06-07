@@ -8,7 +8,9 @@ function AboutMe() {
                 <img src={placeholder} alt="placeholder" />
             </div>
             <div className="flex flex-col justify-center gap-6 w-full grow">
-                <h1 className="font-bold text-3xl">About Me</h1>
+                <div className='overflow-hidden'>
+                    <h1 className="font-bold text-3xl">About Me</h1>
+                </div>
                 <p className="text-gray-500">
                     I'm a passionate developer with a strong foundation in both front-end and back-end technologies. With several years of experience building web applications, I focus on creating intuitive, responsive, and accessible user experiences.
                 </p>
