@@ -1,5 +1,6 @@
 const languages = {
     en: {
+        'greetings': `Hi, I'm EduardoCode`,
         'about-me': 'About Me',
         skills: 'Skills',
         contact: 'Contact',
@@ -23,6 +24,7 @@ const languages = {
         'send-message': 'Send Message'
     },
     es: {
+        'greetings': 'Hola, Soy EduardoCode',
         'about-me': 'Sobre mí',
         skills: 'Habilidades',
         contact: 'Contacto',
