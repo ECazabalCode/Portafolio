@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import AppContext from './context/AppContext'
 import Navbar from './modules/site/components/Navbar'
 import Banner from './modules/site/components/Banner'
@@ -6,10 +7,9 @@ import Contact from './modules/site/components/Contact'
 import AboutMe from './modules/site/components/AboutMe'
 import MySkills from './modules/site/components/MySkills'
 import './css/app.css'
-import { useState } from 'react'
 
 function App() {
-  const [language,setLanguage] = useState('en')
+  const [language,setLanguage] = useState('es')
   
   return (
     <AppContext.Provider value={{ language, setLanguage }}>

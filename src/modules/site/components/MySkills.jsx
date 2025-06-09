@@ -1,12 +1,12 @@
 import { useContext } from 'react'
-import tools from '../../../assets/tools.svg'
+import tools from '/src/assets/tools.svg'
 import Tag from '../../common/components/Tag'
 import Line from '../../common/components/Line'
 import Card from '../../common/components/Card'
-import server from '../../../assets/server.svg'
+import server from '/src/assets/server.svg'
 import AppContext from '../../../context/AppContext'
 import Container from '../../common/components/Container'
-import codeBracket from '../../../assets/code-bracket.svg'
+import codeBracket from '/src/assets/code-bracket.svg'
 import getTextByLanguage from '../../../utils/get-text-by-language'
 
 function MySkills() {

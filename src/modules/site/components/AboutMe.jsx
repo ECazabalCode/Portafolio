@@ -6,6 +6,10 @@ import getTextByLanguage from '../../../utils/get-text-by-language'
 
 function AboutMe() {
     const appContext = useContext(AppContext)
+
+    const handleClick = () => {
+        location.href = './Ángel Eduardo Cazabal Salas.pdf'
+    }
     
     return (
         <div className="grid grid-cols-1 md:grid-cols-2 py-12 md:py-32 gap-10 border-b border-gray-200 w-full px-4 grow" id='about-me'>
@@ -23,6 +27,7 @@ function AboutMe() {
                     {getTextByLanguage(appContext.language,'about-me-description-second-part')}
                 </p>
                 <Button
+                    onClick={handleClick}
                     color='white'
                     modifiers='mr-auto'
                     style={{ padding: '0.6rem 1rem' }}>

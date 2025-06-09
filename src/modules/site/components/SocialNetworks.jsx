@@ -1,5 +1,9 @@
 import { useContext } from 'react'
 import AppContext from '../../../context/AppContext'
+import emailIcon from '/src/assets/email-outline.svg'
+import githubIcon from '/src/assets/github-outline.svg'
+import linkedinIcon from '/src/assets/linkedin_social_icon.svg'
+import languageIcon from '/src/assets/language.svg'
 
 function SocialNetworks() {
     const appContext = useContext(AppContext)
@@ -12,23 +16,23 @@ function SocialNetworks() {
     return (
         <div className="flex gap-2 px-3 items-center ml-auto lg:m-0 lg:ms-auto">
             <button href="#" className="cursor-pointer p-3 hover:bg-gray-100 rounded flex text-xs gap-1" onClick={handleClick}>
-                <img className="w-4" src='src/assets/language.svg' alt="language" />
+                <img className="w-4" src={languageIcon} alt="language" />
                 <p>{appContext.language}</p>
             </button>
-            <a href="#" className="p-3 hover:bg-gray-100 rounded">
+            <a href="https://github.com/ECazabalCode" target='_blank' className="p-3 hover:bg-gray-100 rounded">
                 <img
                     className="w-4"
-                    src="src/assets/github-outline.svg" alt="github" />
+                    src={githubIcon} alt="github" />
             </a>
-            <a href="#" className="p-3 hover:bg-gray-100 rounded">
+            <a href="https://www.linkedin.com/in/eduardo-salas-68773b1a7/" target='_blank' className="p-3 hover:bg-gray-100 rounded">
                 <img
                     className="w-4"
-                    src="src/assets/linkedin_social_icon.svg" alt="linkedin" />
+                    src={linkedinIcon} target='_blank' alt="linkedin" />
             </a>
-            <a href="#" className="p-3 hover:bg-gray-100 rounded">
+            <a href="mailto:eduardocazabalsalas@gmail.com" className="p-3 hover:bg-gray-100 rounded">
                 <img
                     className="w-4"
-                    src="src/assets/email-outline.svg" alt="email" />
+                    src={emailIcon} alt="email" />
             </a>
         </div>
     )
