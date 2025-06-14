@@ -10,6 +10,7 @@ function SocialNetworks() {
 
     const handleClick = () => {
         const language = appContext.language === 'en' ? 'es' : 'en'
+        localStorage.setItem('language', language)
         appContext.setLanguage(language)
     }
 

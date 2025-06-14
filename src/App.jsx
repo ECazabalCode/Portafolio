@@ -9,8 +9,8 @@ import MySkills from './modules/site/components/MySkills'
 import './css/app.css'
 
 function App() {
-  const [language,setLanguage] = useState('es')
-  
+  const [language, setLanguage] = useState(localStorage.getItem('language') || 'es')
+
   return (
     <AppContext.Provider value={{ language, setLanguage }}>
       <Navbar />
