@@ -6,6 +6,7 @@ import Footer from './modules/site/components/Footer'
 import Contact from './modules/site/components/Contact'
 import AboutMe from './modules/site/components/AboutMe'
 import MySkills from './modules/site/components/MySkills'
+import FeaturedProjects from './modules/site/components/FeaturedProjects'
 import './css/app.css'
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Banner />
       <AboutMe />
       <MySkills />
+      <FeaturedProjects />
       <Contact />
       <Footer />
     </AppContext.Provider>

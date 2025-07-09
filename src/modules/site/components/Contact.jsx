@@ -10,18 +10,18 @@ import getTextByLanguage from '../../../utils/get-text-by-language'
 function SocialNetworksContact() {
     return (
         <div className='flex flex-col gap-4 text-md'>
-            <div className="flex gap-3 text-xs md:text-md">
+            <a className='flex gap-3 text-sm' target='_blank' href="mailto:eduardocazabalsalas@gmail.com">
                 <img style={{ width: '1.3rem' }} src={email} alt='email' />
-                <a target='_blank' href="mailto:eduardocazabalsalas@gmail.com">eduardocazabalsalas@gmail.com</a>
-            </div>
-            <div className="flex gap-3 text-xs md:text-md">
-                <img style={{ width: '1.3rem' }} src={linkedin} alt='email' />
-                <a target='_blank' href="mailto:eduardocazabalsalas@gmail.com">eduardocazabalsalas@gmail.com</a>
-            </div>
-            <div className="flex gap-3 text-xs md:text-md">
+                eduardocazabalsalas@gmail.com
+            </a>
+            <a className="flex gap-3 text-sm" target='_blank' href="https://www.linkedin.com/in/eduardo-salas-68773b1a7/">
+                <img style={{ width: '1.3rem' }} src={linkedin} alt='linkedin' />
+                Eduardo Salas
+            </a>
+            <a href="https://github.com/ECazabalCode" target='_blank' className="flex gap-3 text-sm">
                 <img style={{ width: '1.3rem' }} src={github} alt='github' />
-                <a href="#">https://github.com/ECazabalCode</a>
-            </div>
+                ECazabalCode
+            </a>
         </div>
     )
 }

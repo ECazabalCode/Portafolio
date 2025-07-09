@@ -21,7 +21,10 @@ const languages = {
         'contact-subject-field-placeholder': 'Subject',
         'contact-message-field-label': 'Message',
         'contact-message-field-placeholder': 'Message',
-        'send-message': 'Send Message'
+        'send-message': 'Send Message',
+        'xpd-law-description': 'A web scraping application designed to automate the download of PDF documents from all 32 Mexican states, aimed at training an AI agent specialized in the legal field (Help AI MX)',
+        'mailswift-description': 'A web service designed to automate email delivery to customers across the different Expide Tu Factura platforms.',
+        'erp-description': 'ERP designed to optimize and automate key processes such as inventory management, customer control, technical support ticket handling, and efficient contract management, enabling a more agile and centralized operation.'
     },
     es: {
         'greetings': 'Hola, Soy EduardoCode',
@@ -45,7 +48,10 @@ const languages = {
         'contact-subject-field-placeholder': 'Asunto',
         'contact-message-field-label': 'Mensaje',
         'contact-message-field-placeholder': 'Mensaje',
-        'send-message': 'Enviar mensaje'
+        'send-message': 'Enviar mensaje',
+        'xpd-law-description': 'Una aplicación de web scraping desarrollada para automatizar la descarga de documentos PDF provenientes de los 32 estados de la República, con el propósito de entrenar un agente de inteligencia artificial especializado en el sector legal (Help AI MX).',
+        'mailswift-description': 'Un servicio web diseñado para automatizar el envío de correos electrónicos a los clientes de las distintas plataformas de Expide Tu Factura.',
+        'erp-description': 'ERP diseñado para optimizar y automatizar procesos clave como la gestión de inventarios, el control de clientes, la administración de tickets de soporte técnico y el manejo eficiente de contratos, facilitando una operación más ágil y centralizada.'
     },
 }
 

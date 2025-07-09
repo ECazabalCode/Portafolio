@@ -28,7 +28,7 @@ function SocialNetworks() {
             <a href="https://www.linkedin.com/in/eduardo-salas-68773b1a7/" target='_blank' className="p-3 hover:bg-gray-100 rounded">
                 <img
                     className="w-4"
-                    src={linkedinIcon} target='_blank' alt="linkedin" />
+                    src={linkedinIcon} alt="linkedin" />
             </a>
             <a href="mailto:eduardocazabalsalas@gmail.com" className="p-3 hover:bg-gray-100 rounded">
                 <img
