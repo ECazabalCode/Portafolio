@@ -1,0 +1,24 @@
+@keyframes banner-slide-from-down {
+    from {
+        opacity: 0;
+        transform: translateY(5rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0rem);
+    }
+}
+
+@keyframes banner-slide-out {
+    to {
+        opacity: 0;
+        transform: translateY(-5rem);
+    }
+}
+.banner-slide-from-down {
+    animation: banner-slide-from-down 1s;
+}
+
+.banner-slide-out {
+    animation: banner-slide-out 1s forwards;
+}

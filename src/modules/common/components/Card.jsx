@@ -14,11 +14,13 @@ function getColor(color) {
 /**
  * @param {string} barColor
  * @param {import("react").ReactNode} children
- * @returns 
+ * @param {string} modifiers
+ * @param props
+ * @returns {React.JSX.Element}
  */
-function Card({ children, barColor, ...props }) {
+function Card({ children, barColor, modifiers = '', ...props }) {
     return (
-        <div className="flex bg-white flex-col overflow-hidden border border-gray-200 shadow-xs rounded-md" {...props}>
+        <div className={`bg-white overflow-hidden border border-gray-200 shadow-xs rounded-md ${modifiers}`} {...props}>
             {barColor && <div className={`${getColor(barColor)} w-full h-1`}></div>}
             {children}
         </div>
@@ -27,7 +29,7 @@ function Card({ children, barColor, ...props }) {
 
 function Header({ children, ...props }) {
     return (
-        <div className="flex gap-4 items-center px-6 grow" {...props}>
+        <div className="flex gap-4 py-3.5 items-center px-6 grow" {...props}>
             {children}
         </div>
     )
@@ -35,7 +37,7 @@ function Header({ children, ...props }) {
 
 function Body({ children, ...props }) {
     return (
-        <div className="flex flex-col px-6 py-2" {...props}>
+        <div className="flex flex-col px-6 pt-2 pb-6" {...props}>
             {children}
         </div>
     )
@@ -43,7 +45,7 @@ function Body({ children, ...props }) {
 
 function Footer({ children, ...props }) {
     return (
-        <div className="flex flex-col px-6 pb-4" {...props}>
+        <div className="flex flex-col px-6 pb-4 justify-end" {...props}>
             {children}
         </div>
     )

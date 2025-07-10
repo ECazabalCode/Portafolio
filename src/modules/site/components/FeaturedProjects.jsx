@@ -66,10 +66,10 @@ function FeaturedProject() {
                     <Card.Footer>
                         <Container>
                             <Tag text='Java' />
-                            <Tag text='JDBC' />
                             <Tag text='Swing' />
                             <Tag text='Lombok' />
                             <Tag text='MySql' />
+                            <Tag text='JPA' />
                         </Container>
                     </Card.Footer>
                 </Card>

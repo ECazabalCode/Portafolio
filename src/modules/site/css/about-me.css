@@ -1,0 +1,55 @@
+@layer about-me-appear {
+    @keyframes about-me-appear-from-left {
+        from {
+            opacity: 0;
+            transform: translateX(-10rem);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes about-me-appear-from-right {
+        from {
+            opacity: 0;
+            transform: translateX(10rem);
+        }
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    .about-me-appear-from-left {
+        animation: about-me-appear-from-left 1s;
+    }
+
+    .about-me-appear-from-right {
+        animation: about-me-appear-from-right 1s;
+    }
+}
+
+@layer about-me-out {
+    @keyframes about-me-out-to-left {
+        to {
+            opacity: 0;
+            transform: translateX(-10rem);
+        }
+    }
+
+    @keyframes about-me-out-to-right {
+        to {
+            opacity: 0;
+            transform: translateX(10rem);
+        }
+    }
+
+    .about-me-out-to-left {
+        animation: about-me-out-to-left 1s forwards;
+    }
+
+    .about-me-out-to-right {
+        animation: about-me-out-to-right 1s forwards;
+    }
+}

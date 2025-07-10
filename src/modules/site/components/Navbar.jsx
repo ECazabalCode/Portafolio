@@ -7,7 +7,7 @@ function Navbar() {
     const appContext = useContext(AppContext)
 
     return (
-        <nav className="bg-white border-b border-gray-200 py-3 fixed left-0 right-0 flex items-center" style={{ backgroundColor: 'rgba(255,255,255,0.7)', backdropFilter: 'blur(8px)' }}>
+        <nav className="bg-white border-b border-gray-200 py-3 z-10 fixed left-0 right-0 flex items-center" style={{ backgroundColor: 'rgba(255,255,255,0.7)', backdropFilter: 'blur(8px)' }}>
             <div className="ps-4 mr-auto">
                 <h1 className="text-xl font-bold">EduardoCode</h1>
             </div>
