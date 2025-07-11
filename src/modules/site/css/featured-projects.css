@@ -1,0 +1,77 @@
+@layer featured-projects-appear {
+    @keyframes featured-projects-appear-from-left {
+        from{
+            transform: translateX(-10rem);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes featured-projects-appear-from-right {
+        from{
+            transform: translateX(10rem);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    @keyframes featured-projects-appear-from-top {
+        from{
+            transform: translateY(10rem);
+            opacity: 0;
+        }
+        to{
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+    .featured-projects-appear-from-top {
+        animation: featured-projects-appear-from-top 1s;
+    }
+    .featured-projects-appear-from-left {
+        animation: featured-projects-appear-from-left 1s;
+    }
+
+    .featured-projects-appear-from-right {
+        animation: featured-projects-appear-from-right 1s;
+    }
+}
+
+@layer featured-projects-out {
+    @keyframes featured-projects-out-to-left {
+        to {
+            transform: translateX(-10rem);
+            opacity: 0;
+        }
+    }
+
+    @keyframes featured-projects-out-to-right {
+        to {
+            transform: translateX(10rem);
+            opacity: 0;
+        }
+    }
+
+    @keyframes featured-projects-out-to-top {
+        to{
+            transform: translateY(10rem);
+            opacity: 0;
+        }
+    }
+
+    .featured-projects-out-to-left {
+        animation: featured-projects-out-to-left 1s forwards;
+    }
+    .featured-projects-out-to-right {
+        animation: featured-projects-out-to-right 1s forwards;
+    }
+    .featured-projects-out-to-top {
+        animation: featured-projects-out-to-top 1s forwards;
+    }
+}
